@@ -7,7 +7,7 @@ ENV URL ''
 ENV ACCESS_KEY ''
 ENV SECRET_KEY ''
 
-COPY ./entrypoint.sh /
+ADD ./entrypoint.sh /
 
 RUN chmod +x /entrypoint.sh
 
