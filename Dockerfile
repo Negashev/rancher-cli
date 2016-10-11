@@ -7,9 +7,9 @@ ENV URL ''
 ENV ACCESS_KEY ''
 ENV SECRET_KEY ''
 
-ADD ./entrypoint.sh /
+ADD docker-entrypoint.sh /
 
-RUN chmod +x /entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
 
 ENV VERSION v0.1.0
 
@@ -20,4 +20,4 @@ RUN tar -xf /rancher.tar.gz
 RUN mv /rancher-$VERSION/rancher /bin/
 
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
