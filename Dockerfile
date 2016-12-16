@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk --update upgrade && apk add curl ca-certificates docker && rm -rf /var/cache/apk/*
+RUN apk --update upgrade && apk add curl ca-certificates docker openssh && rm -rf /var/cache/apk/*
 
 ENV ENV 1a5
 ENV URL ''
