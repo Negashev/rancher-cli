@@ -1,4 +1,4 @@
 #!/bin/sh
-mkdir -p /root/.rancher
-[ -f /root/.rancher/cli.json ] && echo "Found /root/.rancher/cli.json" || echo "{\"accessKey\":\"$ACCESS_KEY\",\"secretKey\":\"$SECRET_KEY\",\"url\":\"$URL\",\"environment\":\"$ENV\"}" > /root/.rancher/cli.json
+mkdir -p /home/docker-user/.rancher
+[ -f /home/docker-user/.rancher/cli.json ] && echo "Found /home/docker-user/.rancher/cli.json" || echo "{\"accessKey\":\"$ACCESS_KEY\",\"secretKey\":\"$SECRET_KEY\",\"url\":\"$URL\",\"environment\":\"$ENV\"}" > /home/docker-user/.rancher/cli.json
 exec "$@"

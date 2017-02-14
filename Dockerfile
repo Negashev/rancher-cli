@@ -19,5 +19,6 @@ RUN tar -xf /rancher.tar.gz
 
 RUN mv /rancher-$VERSION/rancher /bin/
 
-
+RUN adduser -S docker-user
+USER docker-user
 ENTRYPOINT ["/docker-entrypoint.sh"]
