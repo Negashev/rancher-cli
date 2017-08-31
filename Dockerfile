@@ -11,7 +11,7 @@ ADD docker-entrypoint.sh /
 
 RUN chmod +x /docker-entrypoint.sh
 
-ENV CLI_VERSION=v0.6.1 \
+ENV CLI_VERSION=v0.6.4 \
   COMPOSE_VERSION=v0.12.5
 
 ADD https://github.com/rancher/cli/releases/download/$CLI_VERSION/rancher-linux-amd64-$CLI_VERSION.tar.gz /rancher.tar.gz
