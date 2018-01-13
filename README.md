@@ -1,4 +1,4 @@
-# rancher-cli
+# [DEPRECATED] rancher-cli
 
 ENV ENV 1a5
 
